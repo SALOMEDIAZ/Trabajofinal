@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=".//index.css">
+    <link rel="stylesheet" href="favoritos.css">
+</head>
+<body>
+    <header>
+        <nav class="top-bar">
+            <div class="navbar">
+                <div class="logo">
+                    <h1><span>Bubble</span></h1>
+                </div>
+                <div class="icon-user">
+                    <svg onclick="redirectToLogin()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg>
+                    <svg onclick="redirectToFavoritos()" id="icono-carro" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="busqueda">
+                <div class="menu">
+                    <ul>
+                        <li class="dropdown">
+                                <li><a href="Trendings.html">Trendings</a></li>
+                                <li><a href="main.html">Online Store</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<div class="total">
+
+    <div class="carrito">
+<h1>Your Order</h1>
+    <div class="cat">
+        <p class="producto">Product</p>
+        <p class="precio">Price</p>
+        <p class="cantidad">Cantidad</p>
+    </div>
+    <div class="pro1">
+        <img src="https://i.pinimg.com/736x/9e/4c/bc/9e4cbc9b0c80e6ecdb480fccd16bb0ef.jpg" alt="">
+        <h2>Pomegranate</h2>
+        <p>$10.000</p>
+        <h5>- 1 +</h5>
+    </div>
+    <div class="pro2">
+        <img src="https://i.pinimg.com/736x/ec/96/b3/ec96b33d976ee4a4d5ca59231238bd91.jpg" alt="">
+        <h2>Milk Téa</h2>
+        <p>$7.000</p>
+        <h5>- 1 +</h5>
+    </div>
+</div>
+
+
+
+<div class="cuenta">
+    <div class="Cafe">
+        <h1>Total</h1>
+        <div class="adentro">
+        <p>Subtotal</p>
+        <p>$17.000</p>
+    </div>
+        <div class="adentro2">
+        <p>Shipping</p>
+        <p><span class="bold">FREE</span></p>
+    </div>
+        </div>
+    <div class="res">
+        <h1>Total</h1>
+        <h1>$17.000</h1>
+    </div>
+    <button>Pay</button>
+    
+</div>
+</div>
+
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const cuentaLink = document.querySelector('a[href="Usuario/account.html"]');
+        const loggedIn = localStorage.getItem('email') && localStorage.getItem('password');
+
+        if (!loggedIn) {
+            cuentaLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Debes iniciar sesión o registrarte para acceder a tu cuenta.');
+            });
+        }
+    });
+</script>
+
+</body>
+</html>

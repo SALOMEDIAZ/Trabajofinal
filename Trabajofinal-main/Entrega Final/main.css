@@ -1,0 +1,149 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+}
+
+.navbar .logo h1 {
+  margin: 0;
+}
+
+.cuerpo {
+  padding: 20px;
+}
+
+.filtros {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.buscar {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.buscar:focus {
+  border-color:#e91e63;
+  box-shadow: 0 0 5px rgba(70, 79, 88, 0.5);
+}
+
+.category-filters {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-filters button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: white;
+  background-color: #e91e63;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.category-filters button:hover {
+  background-color: #e91e63;
+  transform: scale(1.1);
+}
+
+.productos {
+  display: flex;
+  overflow-x: auto; 
+  padding: 10px;
+  gap: 20px; 
+  scroll-snap-type: x mandatory;
+}
+
+.products {
+  display: flex;
+  flex-wrap: nowrap; 
+  gap: 20px;
+}
+
+.product-card {
+  min-width: 200px; 
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  scroll-snap-align: start; 
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.product-card button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e91e63;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-card button:hover {
+  background-color: #ec6491;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-section {
+  max-width: 300px;
+  text-align: left;
+}
+
+.footer-section h4 {
+  font-weight: 700;
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+}
+
+.footer-section a {
+  color: #e91e63;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #ff5722;
+}
