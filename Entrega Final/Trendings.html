@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendings</title>
+    <link rel="stylesheet" href="Trending.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Bubble</h1>
+            </div>
+            <div class="icon-user">
+                <svg onclick="redirectToLogin()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                </svg>
+                <svg onclick="redirectToFavoritos()" id="icono-carro" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                </svg>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="Trendings.html">Trendings</a></li>
+                <li><a href="main.html">Online Store</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <h1>Discover Our Trending Products</h1>
+        <h3>Don't miss out on the hottest items!</h3>
+    </section>
+
+    <!-- Products Section -->
+    <section class="container">
+        <div class="producto1">
+            <img src="https://i.pinimg.com/236x/76/8d/0e/768d0e15e22941f34f5a9ee88838d563.jpg" alt="Matcha Té">
+            <div class="texto">
+                <h1>Matcha Té</h1>
+                <p>$10.00</p>
+            </div>
+            <a href="detalle.html?id=1" class="button">¡Shop Now!</a>
+        </div>
+
+        <div class="producto2">
+            <img src="https://i.pinimg.com/236x/ec/ba/21/ecba217fa648dcecd80f91e88dd8b889.jpg" alt="Orange Té">
+            <div class="texto">
+                <h1>Orange Té</h1>
+                <p>$12.00</p>
+            </div>
+            <a href="detalle.html?id=2" class="button">¡Shop Now!</a>
+        </div>
+
+        <div class="producto3">
+            <img src="https://i.pinimg.com/236x/a6/24/fb/a624fbb6f9b6ea84990da6fdec74db20.jpg" alt="Bobba Té">
+            <div class="texto">
+                <h1>Bobba Té</h1>
+                <p>$13.00</p>
+            </div>
+            <a href="detalle.html?id=3" class="button">¡Shop Now!</a>
+        </div>
+
+        <div class="producto4">
+            <img src="https://i.pinimg.com/236x/ee/a3/29/eea32975cf588dc46c9ea6ab57c0c885.jpg" alt="Green Té Bobba">
+            <div class="texto">
+                <h1>Green Té Bobba</h1>
+                <p>$13.00</p>
+            </div>
+            <a href="detalle.html?id=4" class="button">¡Shop Now!</a>
+        </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>At Bubble, we celebrate the art of Bubble Tea.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: contact@bubble.com</p>
+                <p>Phone: +123 456 789</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
