@@ -22,24 +22,23 @@ function renderProduct() {
 }
 
 // Función para agregar el producto a los favoritos (localStorage)
-function addToFavorites() {
-    const product = getProduct(); // Obtén el producto actual desde la URL
-
+function addTocart() {
+    const product = getProduct(); 
     if (product) {
-        // Obtener los favoritos actuales desde localStorage
-        let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+        // Obtener los añadidos actuales desde localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
         // Verificar si el producto ya está en favoritos
-        if (!favorites.find(p => p.id === product.id)) {
-            favorites.push(product);
+        if (!cart.find(p => p.id === product.id)) {
+            cart.push(product);
 
             // Guardar los favoritos de nuevo en localStorage
-            localStorage.setItem('favorites', JSON.stringify(favorites));
+            localStorage.setItem('cart', JSON.stringify(cart));
 
             // Mostrar mensaje de confirmación
-            document.getElementById("favoriteMessage").style.display = "block";
+            document.getElementById("cartMessage").style.display = "block";
             setTimeout(() => {
-                document.getElementById("favoriteMessage").style.display = "none";
+                document.getElementById("cartMessage").style.display = "none";
             }, 2000);  // Ocultar mensaje después de 2 segundos
         } else {
             alert("Este producto ya está en tus favoritos.");
